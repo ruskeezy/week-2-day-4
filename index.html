@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms and Events</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="sample-form">
+
+      <fieldset>
+        <label for="first">First Name:</label>
+        <input type="text" name="first" placeholder="Enter your name" minLength="6" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="last">Last Name:</label>
+        <input type="text" name="last" placeholder="Enter your last name" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="enrolled">Currently Enrolled?</label>
+        <input type="checkbox" name="enrolled" value="enrolled">
+      </fieldset>
+
+      <fieldset>
+        <label for="future_classes">Interested in future courses?></label>
+        <input type="radio" name="future_classes" value="yes"><span>yes</span>
+        <input type="radio" name="future_classes" value="no"><span>no</span>
+      </fieldset>
+
+      <button id="submit_btn" type="submit">Add Student</button>
+    </form>
+    <section>
+      <table>
+        <thead>
+          <th>first name</th>
+          <th>last name</th>
+          <th>enrolled</th>
+          <th>interested in future classes?</th>
+        </thead>
+        <tbody id="student_table">
+          <!-- content goes here -->
+        </tbody>
+      </table>
+    </section>
+
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
